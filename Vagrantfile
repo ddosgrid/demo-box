@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ddosgrid_ddosdb-demo"
+  config.vm.box = "demo.box"
   config.vm.network "forwarded_port", guest: 80, host: 80, guest_ip: "10.0.1.2"
   config.vm.network "private_network", ip: "10.0.1.2"
 

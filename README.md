@@ -9,7 +9,7 @@ Demo: Snapshot of a box running DDoSGrid and DDoSDB
 * Linux host OS: Tested on Debian 10 and Arch Linux
 ## Setup
 
-First, download the virtual box image from XZY
+First, download the virtual box image "demo.box" from XZY into your local repo:
 ``` 
 cd /path/to/local/repo
 curl -O XZY
@@ -19,9 +19,9 @@ Next, bring up the virtualbox with Vagrant. If you want to do this manually make
 sudo vagrant up
 ```
 
-Finally, on your host OS (!), create a named alias to localhost:
+Next, on your host OS (!), create a named alias to localhost in your hosts file (or register a proper FQDN in your DNS zone):
 ```
-sudo echo "127.0.0.1 ddos.grid" > /etc/hosts
+echo 127.0.0.1 ddos.grid | sudo tee -a /etc/hosts
 ```
 
 Finally, login using your browser on the host OS by navigating to `http://ddos.grid/ddosgrid`. One may login with user `demo` and password `Tx6e#X4$f4Fs`.
