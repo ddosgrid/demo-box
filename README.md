@@ -9,10 +9,10 @@ Demo: Snapshot of a box running DDoSGrid and DDoSDB
 * Linux host OS: Tested on Debian 10 and Arch Linux
 ## Setup
 
-First, download the virtual box image from the releases tab of this repo into the local copy:
+First, download the virtual box image from XZY
 ``` 
 cd /path/to/local/repo
-curl -O TBD
+curl -O XZY
 ```
 Next, bring up the virtualbox with Vagrant. If you want to do this manually make sure that the guest OS has IP `10.0.1.2` and that it is reachable via port 80. This can be done via NAT or with a bridge interface.
 ```
